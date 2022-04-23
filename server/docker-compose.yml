@@ -1,0 +1,27 @@
+version: '3.7'
+services:
+  app:
+    build: .
+    ports:
+      - "3001:3001"
+    volumes:
+      - "/app/node_modules"
+      - ".:/app"
+  postgres:
+    image: postgres:10.5
+    restart: always
+    environment:
+      - TZ=America/Sao_Paulo
+      - POSTGRES_DB=tstfullstak
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - PG_DATA=/var/lib/postgresql/data
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+    ports:
+      - '5438:5432'
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+

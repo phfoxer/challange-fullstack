@@ -1,0 +1,16 @@
+.container {
+  background-color: #fff;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: calc(100% - 90px) 50px 40px;
+  padding-left: 10px;
+  input {
+    width: 100%;
+  }
+  button {
+    justify-content: center;
+    border-radius: 4px;
+  }
+}

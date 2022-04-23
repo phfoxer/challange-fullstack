@@ -1,0 +1,28 @@
+.barContainer {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+  grid-template-areas: 
+  "form search search search"
+  "cards cards cards cards";
+  position: relative;
+  .form {
+    grid-area: form;
+    display: block;
+    position: absolute;
+    width: 100%;
+  }
+  .search {
+    grid-area: search;
+    display: block;
+    position: absolute;
+    width: 100%;
+  }
+  .cards {
+    grid-area: cards;
+    display: block;
+    position: absolute;
+    width: 100%;
+  }
+}

@@ -1,0 +1,9 @@
+[2022-04-23 08:29:54] [INFO] SERVICE: The service has started and is listening on port 3001
+[2022-04-23 08:29:54] [INFO] DATABASE: Connection to company_map database successfully established
+[2022-04-23 08:30:05] [HTTP] GET /api/clinics 200 2 - 88.765 ms
+
+[2022-04-23 08:31:20] [HTTP] GET /api/clinics 200 127 - 58.511 ms
+
+[2022-04-23 08:31:42] [INFO] SERVICE: The service has been stopped
+[2022-04-23 08:31:42] [INFO] DATABASE: Database connection closed
+[2022-04-23 08:31:42] [INFO] SERVICE: The service has been stopped
